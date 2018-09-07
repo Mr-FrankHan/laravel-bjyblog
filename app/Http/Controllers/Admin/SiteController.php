@@ -79,9 +79,18 @@ class SiteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id, Site $siteModel)
     {
-        //
+        $map = [
+            'id' => $id
+        ];
+        $data = $request->except('_token');
+        $result = $siteModel->updateData($map, $data);
+        if ($result) {
+            // 更新缓存
+            Cache::forget('common:site');
+        }
+        return redirect()->back();
     }
 
     /**
