@@ -10,13 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico"/>
     @yield('css')
 </head>
 <body>
 <!-- 顶部导航开始 -->
 <header id="b-public-nav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header" style="margin-right: 40px">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -25,12 +27,12 @@
             </button>
             <a class="navbar-brand" href="/">
                 <div class="hidden-xs b-nav-background"></div>
-                <ul class="b-logo-code">
+                <ul class="b-logo-code" style="margin-right: 20px">
                     <li class="b-lc-start">&lt;?php</li>
                     <li class="b-lc-echo">echo</li>
                 </ul>
-                <p class="b-logo-word">'{{ config('bjyblog.web_name') }}'</p>
-                <p class="b-logo-end">;</p>
+                <p class="b-logo-word">' {{ config('bjyblog.web_name') }} '</p>
+                <p class="b-logo-end">&nbsp;</p>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

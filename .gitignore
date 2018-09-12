@@ -12,6 +12,7 @@ yarn-error.log
 .env
 .phpstorm.meta.php
 _ide_helper.php
+_ide_helper_models.php
 .user.ini
 /public/Demo/*
 phpunit.dusk.xml
