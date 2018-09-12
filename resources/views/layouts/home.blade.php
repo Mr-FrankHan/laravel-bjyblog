@@ -32,7 +32,7 @@
                     <li class="b-lc-echo">echo</li>
                 </ul>
                 <p class="b-logo-word">' {{ config('bjyblog.web_name') }} '</p>
-                <p class="b-logo-end">&nbsp;</p>
+                <p class="b-logo-end">&nbsp;;</p>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -169,33 +169,32 @@
 <footer id="b-foot">
     <div class="container">
         <div class="row b-content">
-            <dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <dl class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <dt>权益</dt>
+                <div style="display: flex;">
                 <dd>许可协议：<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">CC BY-NC 4.0</a></dd>
-                <dd>版权所有：© 2014-{{ date('Y') }} {{ parse_url(config('app.url'))['host'] }}</dd>
+                <dd style="padding-left: 30px;">版权所有：© 2014-{{ date('Y') }} {{ parse_url(config('app.url'))['host'] }}</dd>
+                </div>
+                <div style="display: flex;">
                 @if(!empty(config('bjyblog.icp')))
                     <dd>网站备案：{{ config('bjyblog.icp') }}</dd>
                 @endif
                 @if(!empty(config('bjyblog.admin_email')))
-                    <dd>联系邮箱：<a href="mailto:{!! config('bjyblog.admin_email') !!}">{!! config('bjyblog.admin_email') !!}</a></dd>
+                    <dd style="padding-left: 30px;">联系邮箱：<a href="mailto:{!! config('bjyblog.admin_email') !!}">{!! config('bjyblog.admin_email') !!}</a></dd>
                 @endif
+                </div>
             </dl>
 
-            <dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <dt>架构</dt>
-                <dd>项目名称：<a rel="nofollow" href="https://github.com/baijunyao/laravel-bjyblog" target="_blank">laravel-bjyblog</a></dd>
-                <dd>版本分支：{{ config('bjyblog.version') }}-{{ config('bjyblog.branch') }}</dd>
-                <dd>项目作者：<a href="https://baijunyao.com">白俊遥</a></dd>
-                <dd>主题名称：<a rel="nofollow" href="https://github.com/baijunyao/blog-theme-blueberry">blog-theme-blueberry</a></dd>
-                <dd>主题作者：<a href="https://baijunyao.com">白俊遥</a></dd>
-            </dl>
-
-            <dl class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <dl class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <dt>统计</dt>
+                <div style="display: flex;">
                 <dd>文章总数：{{ $articleCount }}</dd>
-                <dd>评论总数：{{ $commentCount }}</dd>
+                <dd style="padding-left: 30px;">评论总数：{{ $commentCount }}</dd>
+                </div>
+                <div style="display: flex;">
                 <dd>登录用户：{{ $oauthUserCount }}</dd>
-                <dd>随言碎语：{{ $chatCount }}</dd>
+                <dd style="padding-left: 30px;">随言碎语：{{ $chatCount }}</dd>
+                </div>
             </dl>
         </div>
     </div>
