@@ -31,9 +31,9 @@ class IndexController extends Controller
             ->with(['category', 'tags'])
             ->paginate(10);
         $head = [
-            'title' => config('bjyblog.head.title'),
-            'keywords' => config('bjyblog.head.keywords'),
-            'description' => config('bjyblog.head.description'),
+            'title' => config('hzfblog.head.title'),
+            'keywords' => config('hzfblog.head.keywords'),
+            'description' => config('hzfblog.head.description'),
         ];
         $assign = [
             'category_id' => 'index',

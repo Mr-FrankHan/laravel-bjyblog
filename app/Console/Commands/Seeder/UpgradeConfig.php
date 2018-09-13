@@ -42,47 +42,47 @@ class UpgradeConfig extends Command
         $data = [
             [
                 'id' => 101,
-                'name' => 'bjyblog.web_name',
+                'name' => 'hzfblog.web_name',
                 'value' => $config['WEB_NAME'],
             ],
             [
                 'id' => 102,
-                'name' => 'bjyblog.head.keywords',
+                'name' => 'hzfblog.head.keywords',
                 'value' => $config['WEB_KEYWORDS'],
             ],
             [
                 'id' => 103,
-                'name' => 'bjyblog.head.description',
+                'name' => 'hzfblog.head.description',
                 'value' => $config['WEB_DESCRIPTION'],
             ],
             [
                 'id' => 107,
-                'name' => 'bjyblog.water.text',
+                'name' => 'hzfblog.water.text',
                 'value' => $config['TEXT_WATER_WORD'],
             ],
             [
                 'id' => 109,
-                'name' => 'bjyblog.water.size',
+                'name' => 'hzfblog.water.size',
                 'value' => $config['TEXT_WATER_FONT_SIZE'],
             ],
             [
                 'id' => 110,
-                'name' => 'bjyblog.water.color',
+                'name' => 'hzfblog.water.color',
                 'value' => $config['TEXT_WATER_COLOR'],
             ],
             [
                 'id' => 117,
-                'name' => 'bjyblog.icp',
+                'name' => 'hzfblog.icp',
                 'value' => $config['WEB_ICP_NUMBER'],
             ],
             [
                 'id' => 118,
-                'name' => 'bjyblog.admin_email',
+                'name' => 'hzfblog.admin_email',
                 'value' => $config['ADMIN_EMAIL'],
             ],
             [
                 'id' => 119,
-                'name' => 'bjyblog.copyright_word',
+                'name' => 'hzfblog.copyright_word',
                 'value' => $config['COPYRIGHT_WORD'],
             ],
             [
@@ -92,12 +92,12 @@ class UpgradeConfig extends Command
             ],
             [
                 'id' => 123,
-                'name' => 'bjyblog.statistics',
+                'name' => 'hzfblog.statistics',
                 'value' => $config['WEB_STATISTICS'],
             ],
             [
                 'id' => 125,
-                'name' => 'bjyblog.author',
+                'name' => 'hzfblog.author',
                 'value' => $config['AUTHOR'],
             ],
             [
@@ -107,7 +107,7 @@ class UpgradeConfig extends Command
             ],
             [
                 'id' => 128,
-                'name' => 'bjyblog.baidu_site_url',
+                'name' => 'hzfblog.baidu_site_url',
                 'value' => $config['BAIDU_SITE_URL'],
             ],
             [
@@ -132,7 +132,7 @@ class UpgradeConfig extends Command
             ],
             [
                 'id' => 141,
-                'name' => 'bjyblog.alt_word',
+                'name' => 'hzfblog.alt_word',
                 'value' => $config['IMAGE_TITLE_ALT_WORD'],
             ],
             [
@@ -157,33 +157,33 @@ class UpgradeConfig extends Command
             ],
             [
                 'id' => 148,
-                'name' => 'bjyblog.notification_email',
+                'name' => 'hzfblog.notification_email',
                 'value' => $config['EMAIL_RECEIVE'],
             ],
             [
                 'id' => 149,
-                'name' => 'bjyblog.head.title',
+                'name' => 'hzfblog.head.title',
                 'value' => $config['WEB_TITLE'],
             ],
             [
                 'id' => 150,
-                'name' => 'bjyblog.qq_qun.article_id',
+                'name' => 'hzfblog.qq_qun.article_id',
                 'value' => $config['QQ_QUN_ARTICLE_ID'],
             ],
 
             [
                 'id' => 151,
-                'name' => 'bjyblog.qq_qun.number',
+                'name' => 'hzfblog.qq_qun.number',
                 'value' => $config['QQ_QUN_NUMBER'],
             ],
             [
                 'id' => 152,
-                'name' => 'bjyblog.qq_qun.code',
+                'name' => 'hzfblog.qq_qun.code',
                 'value' => $config['QQ_QUN_CODE'],
             ],
             [
                 'id' => 153,
-                'name' => 'bjyblog.qq_qun.or_code',
+                'name' => 'hzfblog.qq_qun.or_code',
                 'value' => $config['QQ_QUN_OR_CODE'],
             ],
 

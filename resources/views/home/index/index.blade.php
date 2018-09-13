@@ -53,7 +53,7 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 hidden-xs">
                             <figure class="b-oa-pic b-style1">
                                 <a href="{{ url('article', $v->id) }}" target="_blank">
-                                    <img src="{{ asset($v->cover) }}" alt="{{ config('bjyblog.alt_word') }}" title="{{ config('bjyblog.alt_word') }}">
+                                    <img src="{{ asset($v->cover) }}" alt="{{ config('hzfblog.alt_word') }}" title="{{ config('hzfblog.alt_word') }}">
                                 </a>
                                 <figcaption>
                                     <a href="{{ url('article', [$v->id]) }}" target="_blank"></a>

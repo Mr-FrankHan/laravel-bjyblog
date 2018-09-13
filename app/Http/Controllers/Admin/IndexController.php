@@ -50,7 +50,7 @@ class IndexController extends Controller
         $data = file_get_contents('https://gitee.com/shuaibai123/laravel-bjyblog/raw/master/config/bjyblog.php');
         preg_match("/\d+(\.\d+){3}/", $data, $version);
         $newVersion = str_replace('.', '', $version[0]);
-        $oldVersion = str_replace(['v', '.'], '', config('bjyblog.version'));
+        $oldVersion = str_replace(['v', '.'], '', config('hzfblog.version'));
         if ($newVersion <= $oldVersion) {
             flash_error('没有需要更新的版本');
             return redirect()->back();
