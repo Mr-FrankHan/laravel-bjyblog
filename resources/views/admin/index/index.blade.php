@@ -29,30 +29,30 @@
     <div class="row top_tiles">
         <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="tile-stats">
+                <div class="icon"><i class="fa fa-book"></i></div>
+                <div class="count">{{ $articleCount }}</div>
+                <h3><a href="{{ url('admin/article/index') }}">原创文章</a></h3>
+            </div>
+        </div>
+        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="tile-stats">
                 <div class="icon"><i class="fa fa-comments-o"></i></div>
                 <div class="count">{{ $commentCount }}</div>
-                <h3>总评论数</h3>
+                <h3><a href="{{ url('admin/comment/index') }}">总评论数</a></h3>
             </div>
         </div>
         <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="tile-stats">
                 <div class="icon"><i class="fa fa-users"></i></div>
                 <div class="count">{{ $oauthUserCount }}</div>
-                <h3>第三方用户</h3>
-            </div>
-        </div>
-        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="tile-stats">
-                <div class="icon"><i class="fa fa-book"></i></div>
-                <div class="count">{{ $articleCount }}</div>
-                <h3>原创文章</h3>
+                <h3><a href="{{ url('admin/oauthUser/index') }}">第三方用户</a></h3>
             </div>
         </div>
         <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="tile-stats">
                 <div class="icon"><i class="fa fa-wechat"></i></div>
                 <div class="count">{{ $chatCount }}</div>
-                <h3>随言碎语</h3>
+                <h3><a href="{{ url('admin/chat/index') }}">随言碎语</a></h3>
             </div>
         </div>
     </div>
