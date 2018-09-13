@@ -175,7 +175,7 @@ class ArticleController extends Controller
             // 更新feed缓存
             Cache::forget('feed:article');
         }
-        return redirect()->back();
+        return redirect('admin/article/index');
     }
 
     /**
