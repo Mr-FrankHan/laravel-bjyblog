@@ -66,7 +66,7 @@ class ConfigsTableSeeder extends Seeder
             array (
                 'id' => 7,
                 'name' => 'TEXT_WATER_WORD',
-                'value' => 'baijunyao.com',
+                'value' => 'hzfblog.com',
                 'created_at' => '2017-04-25 12:12:00',
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
@@ -174,7 +174,7 @@ class ConfigsTableSeeder extends Seeder
             array (
                 'id' => 19,
                 'name' => 'COPYRIGHT_WORD',
-                'value' => '本文为韩志飞原创文章,转载无需和我联系,但请注明来自<a href="http://baijunyao.com">韩志飞博客</a>http://baijunyao.com',
+                'value' => '本文为韩志飞原创文章,转载无需和我联系,但请注明来自<a href="http://hzfblog.com">韩志飞博客</a>http://hzfblog.com',
                 'created_at' => '2017-04-25 12:12:01',
                 'updated_at' => '2017-06-21 22:51:54',
                 'deleted_at' => NULL,
@@ -471,7 +471,7 @@ class ConfigsTableSeeder extends Seeder
                 array (
                     'id' => 52,
                     'name' => 'QQ_QUN_CODE',
-                    'value' => '<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bba3fea90444ee6caf1fb1366027873fe14e86bada254d41ce67768fadd729ee"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="韩志飞博客群" title="韩志飞博客群"></a>',
+                    'value' => '',
                     'created_at' => NULL,
                     'updated_at' => NULL,
                     'deleted_at' => NULL,
@@ -512,7 +512,7 @@ class ConfigsTableSeeder extends Seeder
             56 => [
                 "id" => 107,
                 "name" => "hzfblog.water.text",
-                "value" => "baijunyao.com",
+                "value" => "hzfblog.com",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
                 "deleted_at" => null,
@@ -544,7 +544,7 @@ class ConfigsTableSeeder extends Seeder
             60 => [
                 "id" => 118,
                 "name" => "hzfblog.admin_email",
-                "value" => "baijunyao@baijunyao.com",
+                "value" => "1395882696@qq.com",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
                 "deleted_at" => null,
@@ -552,7 +552,7 @@ class ConfigsTableSeeder extends Seeder
             61 => [
                 "id" => 119,
                 "name" => "hzfblog.copyright_word",
-                "value" => '本文为韩志飞原创文章,转载无需和我联系,但请注明来自<a href="http://baijunyao.com">韩志飞博客</a>http://baijunyao.com',
+                "value" => '本文为韩志飞原创文章,转载无需和我联系,但请注明来自<a href="http://hzfblog.com">韩志飞博客</a>http://hzfblog.com',
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
                 "deleted_at" => null,
@@ -704,7 +704,7 @@ class ConfigsTableSeeder extends Seeder
             80 => [
                 "id" => 152,
                 "name" => "hzfblog.qq_qun.code",
-                "value" => '<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bba3fea90444ee6caf1fb1366027873fe14e86bada254d41ce67768fadd729ee"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="韩志飞博客群" title="韩志飞博客群"></a>',
+                "value" => '',
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
                 "deleted_at" => null,
