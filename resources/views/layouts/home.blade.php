@@ -54,10 +54,10 @@
             </ul>
             <ul id="b-login-word" class="nav navbar-nav navbar-right">
                 @if(empty(session('user.name')))
-                    <li class="b-nav-cname b-nav-login">
-                        <div class="hidden-xs b-login-mobile"></div>
-                        <a class="js-login-btn" href="javascript:;">登录</a>
-                    </li>
+                    {{--<li class="b-nav-cname b-nav-login">--}}
+                        {{--<div class="hidden-xs b-login-mobile"></div>--}}
+                        {{--<a class="js-login-btn" href="javascript:;">登录</a>--}}
+                    {{--</li>--}}
                 @else
                     <li class="b-user-info">
                         <span><img class="b-head_img" src="{{ session('user.avatar') }}" alt="{{ session('user.name') }}" title="{{ session('user.name') }}" /></span>

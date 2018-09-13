@@ -733,6 +733,14 @@ class ConfigsTableSeeder extends Seeder
                 "updated_at" => "2018-08-22 21:03:01",
                 "deleted_at" => null,
             ],
+            84 => [
+                "id" => 156,
+                "name" => "email.encryption",
+                "value" => "SSL",
+                "created_at" => "2018-08-22 21:03:01",
+                "updated_at" => "2018-08-22 21:03:01",
+                "deleted_at" => null,
+            ],
         ));
 
 
