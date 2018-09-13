@@ -12,12 +12,12 @@ class ConfigsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('configs')->delete();
-        
+
         \DB::table('configs')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'name' => 'WEB_NAME',
@@ -26,7 +26,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'name' => 'WEB_KEYWORDS',
@@ -35,7 +35,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-06-21 22:51:54',
                 'deleted_at' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'name' => 'WEB_DESCRIPTION',
@@ -44,7 +44,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'name' => 'WEB_STATUS',
@@ -62,7 +62,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'name' => 'TEXT_WATER_WORD',
@@ -71,7 +71,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'name' => 'TEXT_WATER_TTF_PTH',
@@ -80,7 +80,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'name' => 'TEXT_WATER_FONT_SIZE',
@@ -89,7 +89,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'name' => 'TEXT_WATER_COLOR',
@@ -98,7 +98,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'name' => 'TEXT_WATER_ANGLE',
@@ -107,7 +107,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'name' => 'TEXT_WATER_LOCATE',
@@ -116,7 +116,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 13,
                 'name' => 'IMAGE_WATER_PIC_PTAH',
@@ -125,7 +125,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 14,
                 'name' => 'IMAGE_WATER_LOCATE',
@@ -134,7 +134,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:00',
                 'deleted_at' => NULL,
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 15,
                 'name' => 'IMAGE_WATER_ALPHA',
@@ -143,7 +143,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 16,
                 'name' => 'WEB_CLOSE_WORD',
@@ -152,7 +152,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 17,
                 'name' => 'WEB_ICP_NUMBER',
@@ -161,7 +161,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 18,
                 'name' => 'ADMIN_EMAIL',
@@ -170,7 +170,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-06-21 22:51:54',
                 'deleted_at' => NULL,
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 19,
                 'name' => 'COPYRIGHT_WORD',
@@ -179,7 +179,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-06-21 22:51:54',
                 'deleted_at' => NULL,
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 20,
                 'name' => 'QQ_APP_ID',
@@ -188,7 +188,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 21,
                 'name' => 'CHANGYAN_APP_ID',
@@ -197,7 +197,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 22,
                 'name' => 'CHANGYAN_CONF',
@@ -206,7 +206,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 23,
                 'name' => 'WEB_STATISTICS',
@@ -215,7 +215,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-06-21 22:51:54',
                 'deleted_at' => NULL,
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 24,
                 'name' => 'CHANGEYAN_RETURN_COMMENT',
@@ -224,7 +224,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 25,
                 'name' => 'AUTHOR',
@@ -233,7 +233,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 26,
                 'name' => 'QQ_APP_KEY',
@@ -242,7 +242,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 27,
                 'name' => 'CHANGYAN_COMMENT',
@@ -251,7 +251,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 28,
                 'name' => 'BAIDU_SITE_URL',
@@ -260,7 +260,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-06-21 22:51:54',
                 'deleted_at' => NULL,
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 29,
                 'name' => 'DOUBAN_API_KEY',
@@ -269,7 +269,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 30,
                 'name' => 'DOUBAN_SECRET',
@@ -278,7 +278,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 31,
                 'name' => 'RENREN_API_KEY',
@@ -287,7 +287,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 32,
                 'name' => 'RENREN_SECRET',
@@ -296,7 +296,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 33,
                 'name' => 'SINA_API_KEY',
@@ -305,7 +305,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 34,
                 'name' => 'SINA_SECRET',
@@ -314,7 +314,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 35,
                 'name' => 'KAIXIN_API_KEY',
@@ -323,7 +323,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 36,
                 'name' => 'KAIXIN_SECRET',
@@ -332,7 +332,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 37,
                 'name' => 'SOHU_API_KEY',
@@ -341,7 +341,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 38,
                 'name' => 'SOHU_SECRET',
@@ -350,7 +350,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 39,
                 'name' => 'GITHUB_CLIENT_ID',
@@ -359,7 +359,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 40,
                 'name' => 'GITHUB_CLIENT_SECRET',
@@ -368,7 +368,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 41,
                 'name' => 'IMAGE_TITLE_ALT_WORD',
@@ -377,7 +377,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 42,
                 'name' => 'EMAIL_SMTP',
@@ -386,7 +386,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 43,
                 'name' => 'EMAIL_USERNAME',
@@ -395,7 +395,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 44,
                 'name' => 'EMAIL_PASSWORD',
@@ -404,7 +404,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 45,
                 'name' => 'EMAIL_FROM_NAME',
@@ -413,7 +413,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 46,
                 'name' => 'COMMENT_REVIEW',
@@ -422,7 +422,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 47,
                 'name' => 'COMMENT_SEND_EMAIL',
@@ -431,7 +431,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 48,
                 'name' => 'EMAIL_RECEIVE',
@@ -440,7 +440,7 @@ class ConfigsTableSeeder extends Seeder
                 'updated_at' => '2017-04-25 12:12:01',
                 'deleted_at' => NULL,
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 49,
                 'name' => 'WEB_TITLE',
@@ -487,7 +487,7 @@ class ConfigsTableSeeder extends Seeder
                 ),
             53 => [
                 "id" => 101,
-                "name" => "bjyblog.web_name",
+                "name" => "hzfblog.web_name",
                 "value" => "白俊遥博客",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -495,7 +495,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             54 => [
                 "id" => 102,
-                "name" => "bjyblog.head.keywords",
+                "name" => "hzfblog.head.keywords",
                 "value" => "个人博客,博客模板,thinkphp,laravel博客,php博客,技术博客,白俊遥",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -503,7 +503,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             55 => [
                 "id" => 103,
-                "name" => "bjyblog.head.description",
+                "name" => "hzfblog.head.description",
                 "value" => "白俊遥的php博客,个人技术博客,bjyblog,bjyadmin官方网站",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -511,7 +511,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             56 => [
                 "id" => 107,
-                "name" => "bjyblog.water.text",
+                "name" => "hzfblog.water.text",
                 "value" => "baijunyao.com",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -519,7 +519,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             57 => [
                 "id" => 109,
-                "name" => "bjyblog.water.size",
+                "name" => "hzfblog.water.size",
                 "value" => "15",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -527,7 +527,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             58 => [
                 "id" => 110,
-                "name" => "bjyblog.water.color",
+                "name" => "hzfblog.water.color",
                 "value" => "#008CBA",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -535,7 +535,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             59 => [
                 "id" => 117,
-                "name" => "bjyblog.icp",
+                "name" => "hzfblog.icp",
                 "value" => "豫ICP备14009546号-3",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -543,7 +543,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             60 => [
                 "id" => 118,
-                "name" => "bjyblog.admin_email",
+                "name" => "hzfblog.admin_email",
                 "value" => "baijunyao@baijunyao.com",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -551,7 +551,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             61 => [
                 "id" => 119,
-                "name" => "bjyblog.copyright_word",
+                "name" => "hzfblog.copyright_word",
                 "value" => '本文为白俊遥原创文章,转载无需和我联系,但请注明来自<a href="http://baijunyao.com">白俊遥博客</a>http://baijunyao.com',
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -567,7 +567,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             63 => [
                 "id" => 123,
-                "name" => "bjyblog.statistics",
+                "name" => "hzfblog.statistics",
                 "value" => "",
                 "created_at" => "2018-08-25 17:04:02",
                 "updated_at" => "2018-08-25 17:04:02",
@@ -575,7 +575,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             64 => [
                 "id" => 125,
-                "name" => "bjyblog.author",
+                "name" => "hzfblog.author",
                 "value" => "白俊遥",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -591,7 +591,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             66 => [
                 "id" => 128,
-                "name" => "bjyblog.baidu_site_url",
+                "name" => "hzfblog.baidu_site_url",
                 "value" => "",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -631,7 +631,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             71 => [
                 "id" => 141,
-                "name" => "bjyblog.alt_word",
+                "name" => "hzfblog.alt_word",
                 "value" => "白俊遥博客",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -671,7 +671,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             76 => [
                 "id" => 148,
-                "name" => "bjyblog.notification_email",
+                "name" => "hzfblog.notification_email",
                 "value" => "",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -679,7 +679,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             77 => [
                 "id" => 149,
-                "name" => "bjyblog.head.title",
+                "name" => "hzfblog.head.title",
                 "value" => "白俊遥博客,技术博客,个人博客模板, php博客系统",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -687,7 +687,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             78 => [
                 "id" => 150,
-                "name" => "bjyblog.qq_qun.article_id",
+                "name" => "hzfblog.qq_qun.article_id",
                 "value" => "1",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -695,7 +695,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             79 => [
                 "id" => 151,
-                "name" => "bjyblog.qq_qun.number",
+                "name" => "hzfblog.qq_qun.number",
                 "value" => "88199093",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -703,7 +703,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             80 => [
                 "id" => 152,
-                "name" => "bjyblog.qq_qun.code",
+                "name" => "hzfblog.qq_qun.code",
                 "value" => '<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bba3fea90444ee6caf1fb1366027873fe14e86bada254d41ce67768fadd729ee"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="白俊遥博客群" title="白俊遥博客群"></a>',
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -711,7 +711,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             81 => [
                 "id" => 153,
-                "name" => "bjyblog.qq_qun.or_code",
+                "name" => "hzfblog.qq_qun.or_code",
                 "value" => "/uploads/images/default.png",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -734,7 +734,7 @@ class ConfigsTableSeeder extends Seeder
                 "deleted_at" => null,
             ],
         ));
-        
-        
+
+
     }
 }

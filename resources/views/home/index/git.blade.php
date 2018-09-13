@@ -2,9 +2,9 @@
 
 @section('title', $title)
 
-@section('keywords', config('bjyblog.head.keywords'))
+@section('keywords', config('hzfblog.head.keywords'))
 
-@section('description', config('bjyblog.head.description'))
+@section('description', config('hzfblog.head.description'))
 
 @section('css')
     <style>

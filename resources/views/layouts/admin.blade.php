@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title') - laravel-bjyblog</title>
+    <title>@yield('title') - 韩志飞Blog</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -15,7 +15,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="{{ url('admin/index/index') }}" class="site_title"><i class="fa fa-paw"></i> <span>laravel-bjyblog</span></a>
+                    <a href="{{ url('admin/index/index') }}" class="site_title"><i class="fa fa-paw"></i> <span>hzfblog</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -26,8 +26,14 @@
                         <img src="{{ session('user.avatar') }}" class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
-                        <span>Welcome,</span>
-                        <h2>{{ session('user.name') }}</h2>
+                        <span>
+                            @if(date('a') == 'am')
+                                上午好
+                                @else
+                                下午好
+                            @endif
+                        </span>
+                        <h2 style="font-size: 26px">{{ session('user.name') }}</h2>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->

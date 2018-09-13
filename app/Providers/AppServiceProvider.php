@@ -130,7 +130,7 @@ class AppServiceProvider extends ServiceProvider
             });
 
             // 获取赞赏捐款文章
-            $qunArticleId = config('bjyblog.qq_qun.article_id');
+            $qunArticleId = config('hzfblog.qq_qun.article_id');
             if (empty($qunArticleId)) {
                 $qqQunArticle = [];
             } else {
