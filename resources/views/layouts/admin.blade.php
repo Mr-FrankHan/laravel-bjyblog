@@ -15,7 +15,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="{{ url('admin/index/index') }}" class="site_title"><i class="fa fa-paw"></i> <span>hzfblog</span></a>
+                    <a href="{{ url('admin/index/index') }}" class="site_title"><i class="fa fa-desktop"></i> <span style="margin-left: 30px">hzfblog</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -131,6 +131,10 @@
                     <div class="nav toggle">
                         <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                     </div>
+                    <div class="nav toggle" style="margin-left: -14px">
+                        <a href="{{ url('admin/index/index') }}"><i class="fa fa-home"></i></a>
+                    </div>
+
 
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
