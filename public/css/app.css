@@ -16219,6 +16219,10 @@ a {
   color: #ccc;
 }
 
+#b-content .b-article .b-content-word .js-content {
+  padding: 40px 20px;
+}
+
 #b-content .b-article .b-content-word .js-content ul li {
   list-style: disc;
   margin: 0 15px;
