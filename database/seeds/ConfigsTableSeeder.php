@@ -639,7 +639,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             72 => [
                 "id" => 142,
-                "name" => "email.host",
+                "name" => "mail.host",
                 "value" => "",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -647,7 +647,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             73 => [
                 "id" => 143,
-                "name" => "email.username",
+                "name" => "mail.username",
                 "value" => "",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -655,7 +655,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             74 => [
                 "id" => 144,
-                "name" => "email.password",
+                "name" => "mail.password",
                 "value" => "",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -663,7 +663,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             75 => [
                 "id" => 145,
-                "name" => "email.from.name",
+                "name" => "mail.from.name",
                 "value" => "",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -719,7 +719,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             82 => [
                 "id" => 154,
-                "name" => "email.driver",
+                "name" => "mail.driver",
                 "value" => "smtp",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -727,7 +727,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             83 => [
                 "id" => 155,
-                "name" => "email.port",
+                "name" => "mail.port",
                 "value" => "465",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -735,7 +735,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             84 => [
                 "id" => 156,
-                "name" => "email.encryption",
+                "name" => "mail.encryption",
                 "value" => "SSL",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
@@ -743,7 +743,7 @@ class ConfigsTableSeeder extends Seeder
             ],
             85 => [
                 "id" => 157,
-                "name" => "email.from.address",
+                "name" => "mail.from.address",
                 "value" => "",
                 "created_at" => "2018-08-22 21:03:01",
                 "updated_at" => "2018-08-22 21:03:01",
