@@ -53,6 +53,12 @@
                 </td>
             </tr>
             <tr>
+                <th>发件人邮箱：</th>
+                <td>
+                    <input class="form-control modal-sm" type="text" name="157" value="{{  $config['email.from.address'] }}" >
+                </td>
+            </tr>
+            <tr>
                 <th></th>
                 <td>
                     <input class="btn btn-success" type="submit" value="提交">

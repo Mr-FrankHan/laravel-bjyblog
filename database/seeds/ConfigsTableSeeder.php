@@ -741,6 +741,14 @@ class ConfigsTableSeeder extends Seeder
                 "updated_at" => "2018-08-22 21:03:01",
                 "deleted_at" => null,
             ],
+            85 => [
+                "id" => 157,
+                "name" => "email.from.address",
+                "value" => "",
+                "created_at" => "2018-08-22 21:03:01",
+                "updated_at" => "2018-08-22 21:03:01",
+                "deleted_at" => null,
+            ],
         ));
 
 
