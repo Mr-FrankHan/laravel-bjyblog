@@ -26,7 +26,7 @@ class IndexController extends Controller
     public function index()
 	{
 	    // 获取文章列表数据
-        $article = Article::select('id', 'category_id', 'title', 'author', 'description', 'cover', 'created_at')
+        $article = Article::select('id', 'category_id', 'title', 'author', 'description', 'cover', 'created_at','click')
             ->orderBy('created_at', 'desc')
             ->with(['category', 'tags'])
             ->paginate(10);

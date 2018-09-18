@@ -16158,6 +16158,10 @@ a {
   background: #1f6377;
 }
 
+#b-content .b-one-article .b-article-desc {
+  height: 140px;
+}
+
 #b-content .b-article {
   background: #fff;
   font-size: 16px;
