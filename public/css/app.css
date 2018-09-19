@@ -16729,6 +16729,10 @@ a {
     background-image: none;
   }
 
+  #b-foot .container .b-content {
+    margin-left: 200px;
+  }
+
   #b-foot .go-top {
     width: 70px;
     height: 70px;

@@ -1010,6 +1010,11 @@ a{
     }
   }
   #b-foot{
+      .container{
+          .b-content{
+              margin-left: 200px;
+          }
+      }
     .go-top{
       width: 70px;
       height: 70px;
