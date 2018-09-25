@@ -6,6 +6,10 @@
 
 @section('description', $data->description)
 
+@section('bgimg')
+    <img src="{{ asset('images/home/banner2.jpg') }}" width="100%" />
+@endsection
+
 @section('content')
     <!-- 左侧文章开始 -->
     <div class="col-xs-12 col-md-12 col-lg-8">
@@ -135,7 +139,7 @@
         // 添加行数
         $('pre').addClass('line-numbers');
         // 新页面跳转
-        $('.js-content a').attr('target', '_blank')
+        $('.js-content a').attr('target', '_blank');
 
         // 定义评论url
         ajaxCommentUrl = "{{ url('comment') }}";

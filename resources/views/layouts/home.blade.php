@@ -15,6 +15,7 @@
     @yield('css')
 </head>
 <body>
+@yield('bgimg')
 <!-- 顶部导航开始 -->
 <header id="b-public-nav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -176,28 +177,27 @@
 <footer id="b-foot">
     <div class="container">
         <div class="row b-content">
-            <dl class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div style="display: flex;">
-                    <dd>版权所有：©
-                        2017-{{ date('Y') }} {{ parse_url(config('app.url'))['host'] }}</dd>
-                    @if(!empty(config('hzfblog.icp')))
-                        <dd style="padding-left: 30px;">网站备案：{{ config('hzfblog.icp') }}</dd>
-                    @endif
-                </div>
-                <div style="display: flex;">
-                    @if(!empty(config('hzfblog.admin_email')))
-                        <dd>联系邮箱：<a
-                                href="mailto:{!! config('hzfblog.admin_email') !!}">{!! config('hzfblog.admin_email') !!}</a>
-                        </dd>
-                    @endif
-                    <dd style="padding-left: 30px;">
-                        <script type="text/javascript">
-                            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                            document.write(unescape("%3Cspan id='cnzz_stat_icon_1274828806'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1274828806%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
-                        </script>
-                    </dd>
-                </div>
+            <dl class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <dd>版权所有：©
+                    2018-{{ date('Y') }} {{ parse_url(config('app.url'))['host'] }}</dd>
 
+                @if(!empty(config('hzfblog.admin_email')))
+                    <dd>联系邮箱：<a
+                            href="mailto:{!! config('hzfblog.admin_email') !!}">{!! config('hzfblog.admin_email') !!}</a>
+                    </dd>
+                @endif
+            </dl>
+            <dl class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                @if(!empty(config('hzfblog.icp')))
+                    <dd>网站备案：{{ config('hzfblog.icp') }}</dd>
+                @endif
+                <dd>
+                    {{--cnzz统计--}}
+                    <script type="text/javascript">
+                        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1274828806'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1274828806%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+                    </script>
+                </dd>
             </dl>
         </div>
     </div>
