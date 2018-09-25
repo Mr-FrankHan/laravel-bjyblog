@@ -164,7 +164,6 @@
                         <a class="b-link-a" href="{{ $v->url }}" target="_blank"><span
                                 class="fa fa-link b-black"></span> {{ $v->name }}</a>
                     @endforeach
-                        <a class="b-link-a" href="{{ url('site') }}"><span class="fa fa-link b-black"></span> 更多 </a>
                 </p>
             </div>
         </div>
