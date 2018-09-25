@@ -65,7 +65,7 @@
                 <th>标签</th>
                 <td>
                     @foreach($tag as $v)
-                        {{ $v['name'] }}<input class="bjy-icheck" type="checkbox" name="tag_ids[]" value="{{ $v['id'] }}" @if(in_array($v['id'], old('tag_ids', []))) checked="checked" @endif> &emsp;
+                        {{ $v['name'] }}&nbsp;<input class="bjy-icheck" type="checkbox" name="tag_ids[]" value="{{ $v['id'] }}" @if(in_array($v['id'], old('tag_ids', []))) checked="checked" @endif> &emsp;
                     @endforeach
                     <i class="fa fa-plus-square" style="font-size: 20px;cursor: pointer" data-toggle="modal" data-target="#bjy-tag-modal"></i>
                 </td>
@@ -91,7 +91,7 @@
             <tr>
                 <th>描述</th>
                 <td>
-                    <textarea class="form-control modal-sm" name="description" rows="7" placeholder="可以不填，如不填；则截取文章内容前300字为描述">{{ old('description') }}</textarea>
+                    <textarea class="form-control modal-sm" name="description" rows="7" placeholder="可以不填；如不填，则截取文章内容前300字为描述">{{ old('description') }}</textarea>
                 </td>
             </tr>
             <tr>
