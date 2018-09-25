@@ -35,6 +35,11 @@ Route::group(['namespace' => 'Home'], function () {
     Route::get('feed', 'IndexController@feed');
     // 用于测试
     Route::get('test', 'IndexController@test');
+    // 推荐博客
+    Route::prefix('site')->group(function () {
+        Route::get('/', 'SiteController@index');
+        Route::post('store', 'SiteController@store')->middleware('home.auth', 'clean.xss');;
+    });
 });
 
 // Home模块下 三级模式
@@ -201,6 +206,26 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'admi
         Route::get('restore/{id}', 'FriendshipLinkController@restore');
         // 彻底删除友情链接
         Route::get('forceDelete/{id}', 'FriendshipLinkController@forceDelete');
+    });
+
+    // 推荐博客管理
+    Route::group(['prefix' => 'site'], function () {
+        // 推荐博客列表
+        Route::get('index', 'SiteController@index');
+        // 添加推荐博客
+        Route::get('create', 'SiteController@create');
+        Route::post('store', 'SiteController@store');
+        // 编辑推荐博客
+        Route::get('edit/{id}', 'SiteController@edit');
+        Route::post('update/{id}', 'SiteController@update');
+        // 排序
+        Route::post('sort', 'SiteController@sort');
+        // 删除推荐博客
+        Route::get('destroy/{id}', 'SiteController@destroy');
+        // 恢复删除的推荐博客
+        Route::get('restore/{id}', 'SiteController@restore');
+        // 彻底删除推荐博客
+        Route::get('forceDelete/{id}', 'SiteController@forceDelete');
     });
 
     // 随言碎语管理
