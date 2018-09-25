@@ -6,6 +6,10 @@
 
 @section('description', config('hzfblog.head.description'))
 
+@section('bgimg')
+    <img src="{{ asset('images/home/banner1.jpg') }}" width="100%" />
+@endsection
+
 @section('content')
     <!-- 左侧列表开始 -->
     <div class="col-xs-12 col-md-12 col-lg-8 b-chat">

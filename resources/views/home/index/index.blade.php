@@ -7,7 +7,7 @@
 @section('description', $head['description'])
 
 @section('bgimg')
-<img src="{{ asset('images/home/banner.jpg') }}" width="100%" />
+<img src="{{ asset('images/home/banner1.jpg') }}" width="100%" />
 @endsection
 
 @section('content')

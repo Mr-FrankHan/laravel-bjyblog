@@ -6,6 +6,10 @@
 
 @section('description', config('hzfblog.head.description'))
 
+@section('bgimg')
+    <img src="{{ asset('images/home/banner1.jpg') }}" width="100%" />
+@endsection
+
 @section('css')
     <style>
         .pro_name a{color: #4183c4;}
