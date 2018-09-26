@@ -32,7 +32,7 @@
                             <span class="btn btn-default btn-file">
                                 <span class="fileinput-new">选择图片</span>
                                 <span class="fileinput-exists">更改</span>
-                                <input type="file" name="cover">
+                                <input type="file" name="image">
                             </span>
                             <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">删除</a>
                         </div>
