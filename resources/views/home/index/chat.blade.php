@@ -17,6 +17,7 @@
             @foreach($chat as $k => $v)
                 @if($k%2 == 0)
                     <ul class="b-chat-one animated bounceInLeft">
+                        <img src="{{ $v->image }}" alt="" style="width: 100%">
                         <li class="b-chat-title ">{{ $v->created_at }}</li>
                         <li class="b-chat-content">{{ $v->content }}</li>
                         <div class="b-arrows-right1">
@@ -32,6 +33,7 @@
             @foreach($chat as $k => $v)
                 @if($k%2 == 1)
                     <ul class="b-chat-one animated bounceInRight">
+                        <img src="{{ $v->image }}" alt="" style="width: 100%">
                         <li class="b-chat-title ">{{ $v->created_at }}</li>
                         <li class="b-chat-content">{{ $v->content }}</li>
                         <div class="b-arrows-right1">

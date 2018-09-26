@@ -42,7 +42,14 @@ class ChatController extends Controller
      */
     public function store(Store $request, Chat $chatModel)
     {
-        $data = $request->only('content');
+        $data = $request->only(['content','image']);
+        // 上传配图
+        if ($request->hasFile('image')) {
+            $result = upload('image', 'uploads/chat');
+            if ($result['status_code'] === 200) {
+                $data['image'] = $result['data']['path'].$result['data']['new_name'];
+            }
+        }
         $chatModel->storeData($data);
         return redirect('admin/chat/index');
     }
@@ -70,11 +77,18 @@ class ChatController extends Controller
     public function update(Request $request, $id, Chat $chatModel)
     {
         $data = $request->except('_token');
+        // 上传配图
+        if ($request->hasFile('image')) {
+            $result = upload('image', 'uploads/chat');
+            if ($result['status_code'] === 200) {
+                $data['image'] = $result['data']['path'].$result['data']['new_name'];
+            }
+        }
         $map = [
             'id' => $id
         ];
         $chatModel->updateData($map, $data);
-        return redirect()->back();
+        return redirect('admin/chat/index');
 
     }
 

@@ -267,6 +267,7 @@ if ( !function_exists('markdown_to_html') ) {
 		$parser = new Parser();
 		$html = $parser->makeHtml($markdown);
 		$html = str_replace('<code class="', '<code class="lang-', $html);
+		$html = str_replace(['</h1>','</h2>','</h3>','</h4>','</h5>','</h6>'], ['</h1><br/>','</h2><br/>','</h3><br/>','</h4><br/>','</h5><br/>','</h6><br/>'], $html);
 		// 将临时字符串替换为iframe
 		if (!empty($iframe[0])) {
 			$html = str_replace($tmp, $replace, $html);
