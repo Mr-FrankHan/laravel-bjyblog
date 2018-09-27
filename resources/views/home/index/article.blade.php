@@ -6,6 +6,11 @@
 
 @section('description', $data->description)
 
+{{--文章图片点击放大--}}
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/home/zoomify.min.css')}}">
+@endsection
+
 @section('bgimg')
     <img src="{{ asset('images/home/banner2.jpg') }}" width="100%" />
 @endsection
@@ -119,6 +124,7 @@
                             </div>
                         @endforeach
                         <div class="b-clear-float"></div>
+                        </foreach>
                     </div>
                 </div>
                 <div class="row">
@@ -147,4 +153,9 @@
         titleName = '{{ config('hzfblog.web_name') }}';
     </script>
     <script src="{{ asset('statics/layer-2.4/layer.js') }}"></script>
+    {{--文章图片点击放大--}}
+    <script src="{{ asset('js/home/zoomify.min.js') }}"></script>
+    <script type="text/javascript">
+        $('.js-content img').zoomify()
+    </script>
 @endsection
