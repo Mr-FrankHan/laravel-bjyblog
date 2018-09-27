@@ -199,6 +199,9 @@
                     </script>
                 </dd>
             </dl>
+            <dl class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <dd>本站基于开源项目&nbsp;<a href="https://github.com/baijunyao/laravel-bjyblog" target="_blank">laravel-bjyblog</a>&nbsp;搭建</dd>
+            </dl>
         </div>
     </div>
     <a class="go-top fa fa-angle-up animated jello" href="javascript:;"></a>
