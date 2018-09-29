@@ -230,7 +230,7 @@
                         {{--<a href="{{ url('auth/oauth/redirectToProvider/weibo') }}"><img--}}
                                 {{--src="{{ asset('images/home/sina-login.png') }}" alt="微博登录" title="微博登录"></a>--}}
                     {{--</li>--}}
-                    <li class="col-xs-12 col-md-12 col-lg-12 b-login-img">
+                    <li class="col-xs-6 col-md-4 col-lg-4 b-login-img">
                         <a href="{{ url('auth/oauth/redirectToProvider/github') }}"><img
                                 src="{{ asset('images/home/github-login.jpg') }}" alt="github登录" title="github登录"></a>
                     </li>
