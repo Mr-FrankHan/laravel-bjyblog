@@ -17,3 +17,4 @@ _ide_helper_models.php
 /public/Demo/*
 phpunit.dusk.xml
 public/favicon.ico
+public/robots.txt
