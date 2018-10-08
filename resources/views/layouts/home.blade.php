@@ -80,7 +80,7 @@
     <div class="row">
     @yield('content')
     <!-- 通用右部区域开始 -->
-        <div id="b-public-right" class="col-lg-4 hidden-xs hidden-sm hidden-md">
+        <div id="b-public-right" class="col-lg-3 hidden-xs hidden-sm hidden-md">
             <div class="b-search">
                 <form class="form-inline" role="form" action="{{ url('search') }}" method="get">
                     <input class="b-search-text" type="text" name="wd">

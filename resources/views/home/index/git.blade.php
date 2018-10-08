@@ -23,7 +23,7 @@
 
 @section('content')
     {{--左侧开源项目开始--}}
-    <div class="col-xs-12 col-md-12 col-lg-8 b-chat">
+    <div class="col-xs-12 col-md-12 col-lg-9 b-chat">
         @foreach($gitProject as $v)
             @if($v->type == 1)
                 <div class="github-widget" data-repo="{{ $v->name }}"></div>

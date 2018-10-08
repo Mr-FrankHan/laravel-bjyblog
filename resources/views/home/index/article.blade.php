@@ -17,7 +17,7 @@
 
 @section('content')
     <!-- 左侧文章开始 -->
-    <div class="col-xs-12 col-md-12 col-lg-8">
+    <div class="col-xs-12 col-md-12 col-lg-9">
         <div class="row b-article">
             <h1 class="col-xs-12 col-md-12 col-lg-12 b-title">{{ $data->title }}</h1>
             <div class="col-xs-12 col-md-12 col-lg-12">

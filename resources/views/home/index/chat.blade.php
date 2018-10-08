@@ -12,7 +12,7 @@
 
 @section('content')
     <!-- 左侧列表开始 -->
-    <div class="col-xs-12 col-md-12 col-lg-8 b-chat">
+    <div class="col-xs-12 col-md-12 col-lg-9 b-chat">
         <div class="b-chat-left">
             @foreach($chat as $k => $v)
                 @if($k%2 == 0)
