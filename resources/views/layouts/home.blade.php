@@ -257,6 +257,7 @@
     })();
 </script>
 
+<script type="text/javascript" src="{{ asset('statics/canvas/canvas-nest.js') }}"></script>
 <script src="{{ mix('js/app.js') }}"></script>
 <!-- 百度统计开始 -->
 {!! htmlspecialchars_decode(config('hzfblog.statistics')) !!}
