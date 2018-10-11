@@ -20,6 +20,7 @@ use DB;
 use Illuminate\Database\QueryException;
 use Artisan;
 use Exception;
+use QL\QueryList;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -118,6 +119,17 @@ class AppServiceProvider extends ServiceProvider
                     ->get();
             });
 
+            //获取业内资讯
+            $news = Cache::remember('common:news',60,function (){
+                $rules = array(
+                    'link' => array('.col-of-news>.page>.box>.news-link','href'),
+                    'title' => array('.col-of-news>.page>.box>.news-link','title'),
+                );
+                $html = file_get_contents('https://www.oschina.net/');
+                $data = QueryList::html($html)->rules($rules)->query()->getdata();
+                return array_slice($data->all(),0,15);
+            });
+
             // 获取赞赏捐款文章
             $qunArticleId = config('hzfblog.qq_qun.article_id');
             if (empty($qunArticleId)) {
@@ -129,7 +141,7 @@ class AppServiceProvider extends ServiceProvider
             }
 
             // 分配数据
-            $assign = compact('category', 'tag', 'topArticle', 'newComment', 'friendshipLink', 'nav', 'qqQunArticle');
+            $assign = compact('category', 'tag', 'topArticle', 'newComment', 'friendshipLink', 'nav', 'qqQunArticle','news');
             $view->with($assign);
         });
     }

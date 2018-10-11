@@ -157,6 +157,15 @@
                     @endforeach
                 </div>
             </div>
+            <div class="b-news">
+                <h4 class="b-title">开源资讯</h4>
+                <p class="b-news-p">
+                    @foreach($news as $v)
+                        <a class="b-news-a" href="{{ 'https://www.oschina.net'.$v['link'] }}" target="_blank"><span
+                                class="fa fa-newspaper-o b-black"></span> {{ $v['title'] }}</a>
+                    @endforeach
+                </p>
+            </div>
             <div class="b-link">
                 <h4 class="b-title">友情链接</h4>
                 <p>

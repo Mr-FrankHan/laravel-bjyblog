@@ -15813,6 +15813,8 @@ a {
   /* 标签结束 */
   /* 置顶推荐开始 */
   /* 置顶推荐结束 */
+  /* 开源资讯开始 */
+  /* 开源资讯结束 */
   /* 友情链接开始 */
   /* 友情链接结束 */
   /* 搜索开始 */
@@ -15826,7 +15828,8 @@ a {
 #b-public-right .b-link,
 #b-public-right .b-search,
 #b-public-right .b-comment-list,
-#b-public-right .b-qun {
+#b-public-right .b-qun,
+#b-public-right .b-news {
   margin-bottom: 20px;
   padding: 10px 20px;
   background: #fff;
@@ -15840,7 +15843,8 @@ a {
 #b-public-right .b-link .b-title,
 #b-public-right .b-search .b-title,
 #b-public-right .b-comment-list .b-title,
-#b-public-right .b-qun .b-title {
+#b-public-right .b-qun .b-title,
+#b-public-right .b-news .b-title {
   height: 30px;
 }
 
@@ -15935,6 +15939,19 @@ a {
 }
 
 #b-public-right .b-recommend .b-recommend-p .b-recommend-a .fa {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+#b-public-right .b-news .b-news-p .b-news-a {
+  margin: 10px 0;
+  padding-left: 18px;
+  display: block;
+  position: relative;
+}
+
+#b-public-right .b-news .b-news-p .b-news-a .fa {
   position: absolute;
   left: 0;
   top: 5px;
@@ -16233,7 +16250,8 @@ a {
 }
 
 #b-content .b-article .b-content-word .js-content p {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 #b-content .b-article .b-content-word .js-content ol {

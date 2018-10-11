@@ -204,7 +204,7 @@ a{
 
 /* 通用右侧开始 */
 #b-public-right{
-  .b-tags,.b-recommend,.b-link,.b-search,.b-comment-list,.b-qun{
+  .b-tags,.b-recommend,.b-link,.b-search,.b-comment-list,.b-qun,.b-news{
     margin-bottom: 20px;
     padding: 10px 20px;
     background: #fff;
@@ -310,6 +310,24 @@ a{
     }
   }
   /* 置顶推荐结束 */
+
+    /* 开源资讯开始 */
+    .b-news{
+        .b-news-p{
+            .b-news-a{
+                margin: 10px 0;
+                padding-left: 18px;
+                display: block;
+                position: relative;
+                .fa{
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                }
+            }
+        }
+    }
+    /* 开源资讯结束 */
 
   /* 友情链接开始 */
   .b-link-a{
@@ -561,7 +579,8 @@ a{
           margin: 0 15px
         }
         p{
-          margin-bottom: 20px;
+          margin-top: 10px;
+          margin-bottom: 15px;
         }
         ol {
           padding-left: 15px;
