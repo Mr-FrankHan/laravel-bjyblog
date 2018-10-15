@@ -127,7 +127,7 @@ class AppServiceProvider extends ServiceProvider
                 );
                 $html = file_get_contents('https://www.oschina.net/');
                 $data = QueryList::html($html)->rules($rules)->query()->getdata();
-                return array_slice($data->all(),0,15);
+                return array_slice($data->all(),0,10);
             });
 
             // 获取赞赏捐款文章
