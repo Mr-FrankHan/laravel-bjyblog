@@ -8,7 +8,6 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta name="author" content="hanzhifei,{{ htmlspecialchars_decode(config('hzfblog.admin_email')) }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="baidu_union_verify" content="0e704df16f1ddfd818ef1ba639a5d60e">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="shortcut icon" href="/favicon.ico"/>
