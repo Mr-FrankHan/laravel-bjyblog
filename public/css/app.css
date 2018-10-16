@@ -6170,7 +6170,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1280px;
+    width: 1240px;
   }
 }
 
@@ -6946,7 +6946,7 @@ pre code {
   }
 
   .col-lg-3 {
-    width: 30%;
+    width: 25%;
   }
 
   .col-lg-4 {
@@ -6970,7 +6970,7 @@ pre code {
   }
 
   .col-lg-9 {
-    width: 70%;
+    width: 75%;
   }
 
   .col-lg-10 {
