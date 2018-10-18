@@ -120,7 +120,6 @@ class AppServiceProvider extends ServiceProvider
             });
 
             //获取业内资讯
-            Cache::forget('common:news');
             $news = Cache::remember('common:news',360,function (){
                 $rules = array(
                     'link' => array('.col-of-news>.page>.box>.news-link','href'),
