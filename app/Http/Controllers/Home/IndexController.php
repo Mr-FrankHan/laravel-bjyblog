@@ -301,7 +301,7 @@ class IndexController extends Controller
                 ->get();
         });
         $feed = App::make("feed");
-        $feed->title = '韩志飞';
+        $feed->title = '飞行猿博客';
         $feed->description = '飞行猿博客';
         $feed->logo = 'https://www.hzfblog.com/uploads/avatar/1.jpg';
         $feed->link = url('feed');
