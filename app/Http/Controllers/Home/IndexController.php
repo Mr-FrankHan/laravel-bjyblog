@@ -301,9 +301,9 @@ class IndexController extends Controller
                 ->get();
         });
         $feed = App::make("feed");
-        $feed->title = '白俊遥';
-        $feed->description = '白俊遥博客';
-        $feed->logo = 'https://baijunyao.com/uploads/avatar/1.jpg';
+        $feed->title = '韩志飞';
+        $feed->description = '飞行猿博客';
+        $feed->logo = 'https://www.hzfblog.com/uploads/avatar/1.jpg';
         $feed->link = url('feed');
         $feed->setDateFormat('carbon');
         $feed->pubdate = $article->first()->created_at;
