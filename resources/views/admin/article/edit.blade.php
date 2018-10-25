@@ -107,6 +107,12 @@
                     <input class="js-switch" type="checkbox" name="is_top" value="1" @if($article->is_top == 1) checked="checked" @endif>
                 </td>
             </tr>
+            <tr>
+                <th>原创</th>
+                <td>
+                    <input class="js-switch" type="checkbox" name="is_original" value="1" @if($article->is_original == 1) checked="checked" @endif>
+                </td>
+            </tr>
 
             <tr>
                 <th></th>

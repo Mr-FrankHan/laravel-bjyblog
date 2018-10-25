@@ -108,6 +108,12 @@
                     <input class="js-switch" type="checkbox" name="is_top" value="1" @if(old('is_top', 0) == 1) checked="checked" @endif>
                 </td>
             </tr>
+            <tr>
+                <th>原创</th>
+                <td>
+                    <input class="js-switch" type="checkbox" name="is_original" value="1" @if(old('is_original', 0) == 1) checked="checked" @endif>
+                </td>
+            </tr>
 
             <tr>
                 <th></th>

@@ -35,9 +35,11 @@
             <div class="col-xs-12 col-md-12 col-lg-12 b-content-word">
                 <div class="js-content">{!! $data->html !!}</div>
                 <p class="b-h-20"></p>
+                @if($data->is_original == 1)
                 <p class="b-copyright">
                     {!! htmlspecialchars_decode(config('hzfblog.copyright_word')) !!}
                 </p>
+                @endif
                 <ul class="b-prev-next">
                     <li class="b-prev">
                         上一篇：
