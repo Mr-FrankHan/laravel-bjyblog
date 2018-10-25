@@ -38,17 +38,17 @@
                 <td>{{ $v->click }}</td>
                 <td>
                     @if(is_null($v->deleted_at))
-                        <span style="color: #00A000;font-size: large">√</span>
+                        <span style="font-size: large">√</span>
                     @else
-                        <span style="color: #00A000;font-size: large">×</span>
+                        <span style="font-size: large">×</span>
                     @endif
                 </td>
                 <td>{{ $v->created_at }}</td>
                 <td>
                     @if($v->is_top === 1)
-                        <a href="javascript:location.href='{{ url('admin/article/disRecommend', [$v->id]) }}'"><span style="color: #00A000;font-size: x-large">☑</span></a>
+                        <a href="javascript:location.href='{{ url('admin/article/disRecommend', [$v->id]) }}'"><span style="font-size: x-large">☑</span></a>
                     @else
-                        <a href="javascript:location.href='{{ url('admin/article/recommend', [$v->id]) }}'"><span style="color: #00A000;font-size: x-large">☐</span></a>
+                        <a href="javascript:location.href='{{ url('admin/article/recommend', [$v->id]) }}'"><span style="font-size: x-large">☐</span></a>
                     @endif
                 </td>
                 <td>
