@@ -106,6 +106,10 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'admi
         Route::post('update/{id}', 'ArticleController@update');
         // 上传图片
         Route::post('uploadImage', 'ArticleController@uploadImage');
+        // 置顶文章
+        Route::get('recommend/{id}', 'ArticleController@recommend');
+        // 取消置顶文章
+        Route::get('disRecommend/{id}', 'ArticleController@disRecommend');
         // 删除文章
         Route::get('destroy/{id}', 'ArticleController@destroy');
         // 恢复删除的文章

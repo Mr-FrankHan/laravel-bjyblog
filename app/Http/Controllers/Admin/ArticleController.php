@@ -179,6 +179,52 @@ class ArticleController extends Controller
     }
 
     /**
+     * 置顶文章
+     *
+     * @param $id
+     * @param Article $articleModel
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function recommend($id, Article $articleModel)
+    {
+        $map = [
+            'id' => $id
+        ];
+        $data = [
+            'is_top' => 1
+        ];
+        $result = $articleModel->updateData($map,$data);
+        if ($result) {
+            // 更新缓存
+            Cache::forget('common:topArticle');
+        }
+        return redirect()->back();
+    }
+
+    /**
+     * 取消置顶文章
+     *
+     * @param $id
+     * @param Article $articleModel
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function disRecommend($id, Article $articleModel)
+    {
+        $map = [
+            'id' => $id
+        ];
+        $data = [
+            'is_top' => 0
+        ];
+        $result = $articleModel->updateData($map,$data);
+        if ($result) {
+            // 更新缓存
+            Cache::forget('common:topArticle');
+        }
+        return redirect()->back();
+    }
+
+    /**
      * 删除文章
      *
      * @param $id
