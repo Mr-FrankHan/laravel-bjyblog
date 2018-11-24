@@ -70,6 +70,7 @@
                                     <li><a href="{{ url('admin/comment/index') }}">评论列表</a></li>
                                 </ul>
                             </li>
+                            @if(session('user.is_admin') == '2')
                             <li>
                                 <a><i class="fa fa-users"></i> 用户管理 <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
@@ -100,6 +101,7 @@
                                     <li><a href="{{ url('admin/config/clear') }}">清空缓存</a></li>
                                 </ul>
                             </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
@@ -107,9 +109,11 @@
 
                 <!-- /menu footer buttons -->
                 <div class="sidebar-footer hidden-small">
+                    @if(session('user.is_admin') == '2')
                     <a href="{{ url('admin/config/edit') }}" data-toggle="tooltip" data-placement="top" title="Settings">
                         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                     </a>
+                    @endif
                     <a data-toggle="tooltip" data-placement="top" title="FullScreen">
                         <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
                     </a>

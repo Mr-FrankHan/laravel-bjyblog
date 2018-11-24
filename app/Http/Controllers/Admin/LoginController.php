@@ -16,7 +16,7 @@ class LoginController extends Controller
     public function index(OauthUser $oauthUserModel)
     {
         // 获取是否有第三方用户被设置为管理员
-        $count = $oauthUserModel->where('is_admin', 1)->count();
+        $count = $oauthUserModel->where('is_admin', 1)->orwhere('is_admin',2)->count();
         // 如果有第三方账号管理员；则通过第三方账号登录
         if ($count) {
             die('请通过第三方账号登录');

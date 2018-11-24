@@ -41,6 +41,7 @@
                 <h3><a href="{{ url('admin/comment/index') }}">总评论数</a></h3>
             </div>
         </div>
+        @if(session('user.is_admin') == '2')
         <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="tile-stats">
                 <div class="icon"><i class="fa fa-users"></i></div>
@@ -55,6 +56,7 @@
                 <h3><a href="{{ url('admin/chat/index') }}">随言碎语</a></h3>
             </div>
         </div>
+        @endif
     </div>
     <div class="row">
         <div class="col-md-4">

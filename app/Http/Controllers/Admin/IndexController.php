@@ -45,7 +45,7 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function upgrade()
+    /*public function upgrade()
     {
         $data = file_get_contents('https://gitee.com/shuaibai123/laravel-bjyblog/raw/master/config/bjyblog.php');
         preg_match("/\d+(\.\d+){3}/", $data, $version);
@@ -80,6 +80,6 @@ php;
 
         // 清空缓存
         Artisan::call('cache:clear');
-    }
+    }*/
 
 }
