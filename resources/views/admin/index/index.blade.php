@@ -118,12 +118,6 @@
                     <ul class="list-inline widget_tally">
                         <li>
                             <p>
-                                <span class="month">博客版本 </span>
-                                <span class="count">{{ config('hzfblog.version') }} <a href="{{ url('admin/index/upgrade') }}" target="_blank">更新</a></span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
                                 <span class="month">操作系统 </span>
                                 <span class="count">{{ $version['system'] }}</span>
                             </p>
