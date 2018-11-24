@@ -34,6 +34,8 @@
                 <td>
                     @if($v->is_admin == 1)
                         √️
+                    @elseif($v->is_admin == 2)
+                        √️
                     @else
                         ×
                     @endif
