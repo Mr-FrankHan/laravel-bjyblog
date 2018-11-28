@@ -199,11 +199,6 @@ return [
          */
         Baijunyao\LaravelScoutElasticsearch\ElasticsearchServiceProvider::class,
 
-        /**
-         * Ide-helper
-         */
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-
     ],
 
     /*
