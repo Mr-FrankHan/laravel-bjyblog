@@ -165,6 +165,7 @@ class ArticleController extends Controller
         $data = $request->except('_token');
         $data['is_top'] = isset($data['is_top']) ? $data['is_top'] : 0;
         $data['is_original'] = isset($data['is_original']) ? $data['is_original'] : 0;
+        $data['is_draft'] = isset($data['is_draft']) ? $data['is_draft'] : 0;
         $markdown = $articleModel->where('id', $id)->value('markdown');
         preg_match_all('/!\[.*\]\((.*.[jpg|jpeg|png|gif]).*\)/i', $markdown, $images);
         // 添加水印 并获取第一张图
