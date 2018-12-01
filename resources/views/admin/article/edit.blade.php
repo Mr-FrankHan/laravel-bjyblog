@@ -113,6 +113,12 @@
                     <input class="js-switch" type="checkbox" name="is_original" value="1" @if($article->is_original == 1) checked="checked" @endif>
                 </td>
             </tr>
+            <tr>
+                <th>草稿</th>
+                <td>
+                    <input class="js-switch" type="checkbox" name="is_draft" value="1" @if(old('is_draft', 0) == 1) checked="checked" @endif>
+                </td>
+            </tr>
 
             <tr>
                 <th></th>

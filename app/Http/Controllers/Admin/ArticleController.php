@@ -30,6 +30,7 @@ class ArticleController extends Controller
         }
 
         $article = Article::with('category')
+            ->where('is_draft',0)
             ->orderBy('created_at', 'desc')
             ->when($wd, function ($query) use ($id) {
                 return $query->whereIn('id', $id);
@@ -38,6 +39,33 @@ class ArticleController extends Controller
             ->paginate(15);
         $assign = compact('article');
         return view('admin.article.index', $assign);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function draft(Request $request, Article $articleModel)
+    {
+        $wd = $request->input('wd', '');
+
+        if (empty($wd)) {
+            $id = [];
+        } else {
+            $id = $articleModel->searchArticleGetId($wd);
+        }
+
+        $article = Article::with('category')
+            ->where('is_draft',1)
+            ->orderBy('created_at', 'desc')
+            ->when($wd, function ($query) use ($id) {
+                return $query->whereIn('id', $id);
+            })
+            ->withTrashed()
+            ->paginate(15);
+        $assign = compact('article');
+        return view('admin.article.draft', $assign);
     }
 
     /**

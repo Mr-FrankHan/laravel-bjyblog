@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddIsOriginalToArticlesTable extends Migration
+class AddIsDraftToArticlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddIsOriginalToArticlesTable extends Migration
     public function up()
     {
         Schema::table('articles', function (Blueprint $table) {
-            $table->boolean('is_original')->default(0)->comment('是否原创 1是 0否');
+            $table->boolean('is_draft')->default(0)->comment('是否是草稿 1是 0否');
         });
     }
 
@@ -26,7 +26,7 @@ class AddIsOriginalToArticlesTable extends Migration
     public function down()
     {
         Schema::table('articles', function (Blueprint $table) {
-            $table->dropColumn('is_original');
+            $table->dropColumn('is_draft');
         });
     }
 }

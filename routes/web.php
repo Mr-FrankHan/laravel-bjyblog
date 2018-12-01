@@ -98,6 +98,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'admi
     Route::group(['prefix' => 'article'], function () {
         // 文章列表
         Route::get('index', 'ArticleController@index');
+        // 草稿列表
+        Route::get('draft', 'ArticleController@draft');
         // 发布文章
         Route::get('create', 'ArticleController@create');
         Route::post('store', 'ArticleController@store');

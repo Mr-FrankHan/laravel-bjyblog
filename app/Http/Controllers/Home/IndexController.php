@@ -27,6 +27,7 @@ class IndexController extends Controller
 	{
 	    // 获取文章列表数据
         $article = Article::select('id', 'category_id', 'title', 'author', 'description', 'cover', 'created_at','click')
+            ->where('is_draft',0)
             ->orderBy('created_at', 'desc')
             ->with(['category', 'tags'])
             ->paginate(10);
@@ -73,6 +74,7 @@ class IndexController extends Controller
         $prev = Article::select('id', 'title')
             ->orderBy('created_at', 'desc')
             ->where('id', '<', $id)
+            ->where('is_draft',0)
             ->limit(1)
             ->first();
 
@@ -80,6 +82,7 @@ class IndexController extends Controller
         $next = Article::select('id', 'title')
             ->orderBy('created_at', 'asc')
             ->where('id', '>', $id)
+            ->where('is_draft',0)
             ->limit(1)
             ->first();
 
@@ -108,6 +111,7 @@ class IndexController extends Controller
         }
         // 获取分类下的文章
         $article = $category->articles()
+            ->where('is_draft',0)
             ->orderBy('created_at', 'desc')
             ->with('tags')
             ->paginate(10);
@@ -155,6 +159,7 @@ class IndexController extends Controller
         // TODO 不取 markdown 和 html 字段
         // 获取标签下的文章
         $article = $tag->articles()
+            ->where('is_draft',0)
             ->orderBy('created_at', 'desc')
             ->with(['category', 'tags'])
             ->paginate(10);
@@ -269,6 +274,7 @@ class IndexController extends Controller
         // 获取文章列表数据
         $article = Article::select('id', 'category_id', 'title', 'author', 'description', 'cover', 'created_at')
             ->whereIn('id', $id)
+            ->where('is_draft',0)
             ->orderBy('created_at', 'desc')
             ->with(['category', 'tags'])
             ->paginate(10);
@@ -297,6 +303,7 @@ class IndexController extends Controller
         // 获取文章
         $article = Cache::remember('feed:article', 10080, function () {
             return Article::select('id', 'author', 'title', 'description', 'html', 'created_at')
+                ->where('is_draft',0)
                 ->latest()
                 ->get();
         });
