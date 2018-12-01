@@ -202,7 +202,7 @@ return [
         /**
          * Ide-helper
          */
-//        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 
