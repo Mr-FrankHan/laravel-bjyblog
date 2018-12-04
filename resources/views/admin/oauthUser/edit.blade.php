@@ -39,9 +39,9 @@
             <tr>
                 <th>是否是管理员</th>
                 <td>
-                    <input type="radio" name="is_admin" value="1" @if($data->is_admin == 0) checked @endif />非管理员
+                    <input type="radio" name="is_admin" value="0" @if($data->is_admin == 0) checked @endif />非管理员
                     <input type="radio" name="is_admin" value="1" @if($data->is_admin == 1) checked @endif />普通管理员
-                    <input type="radio" name="is_admin" value="1" @if($data->is_admin == 2) checked @endif />超级管理员
+                    <input type="radio" name="is_admin" value="2" @if($data->is_admin == 2) checked @endif />超级管理员
                 </td>
             </tr>
             <tr>
