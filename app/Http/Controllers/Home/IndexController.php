@@ -58,7 +58,7 @@ class IndexController extends Controller
     public function article($id, Request $request, Comment $commentModel)
     {
         // 获取文章数据
-        $data = Article::with(['category', 'tags'])->find($id);
+        $data = Article::with(['category', 'tags'])->where('is_draft',0)->find($id);
         if (is_null($data)) {
             return abort(404);
         }
