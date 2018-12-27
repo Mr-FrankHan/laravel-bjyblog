@@ -116,6 +116,9 @@ class ArticleController extends Controller
     public function store(Store $request, Article $article)
     {
         $data = $request->except('_token');
+        $arr = [20,21,22];
+        $hour = $arr[array_rand($arr)];
+        $data['created_at'] = date("Y-m-d $hour:i:s");
         // 上传封面图
         if ($request->hasFile('cover')) {
             $result = upload('cover', 'uploads/article');
