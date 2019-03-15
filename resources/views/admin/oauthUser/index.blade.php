@@ -33,11 +33,11 @@
                 <td>{{ $v->login_times }}</td>
                 <td>
                     @if($v->is_admin == 1)
-                        √️
+                        超级管理员
                     @elseif($v->is_admin == 2)
-                        √️
+                        普通管理员
                     @else
-                        ×
+                        非管理员
                     @endif
                 </td>
                 <td>
